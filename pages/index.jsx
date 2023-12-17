@@ -161,7 +161,7 @@ export default function Home() {
         buyMeACoffee.off("NewMemo", onNewMemo)
       }
     }
-  }, [])
+  }, [contractABI, getMemos])
 
   return (
     <div className={styles.container}>
@@ -179,7 +179,7 @@ export default function Home() {
         {currentAccount ? (
           <div>
             <form>
-              <div class="formgroup">
+              <div className="formgroup">
                 <label>
                   Name
                 </label>
@@ -193,7 +193,7 @@ export default function Home() {
                 />
               </div>
               <br />
-              <div class="formgroup">
+              <div className="formgroup">
                 <label>
                   Send Spatch a message
                 </label>
@@ -228,7 +228,7 @@ export default function Home() {
       {currentAccount && (memos.map((memo, idx) => {
         return (
           <div key={idx} style={{ border: "2px solid", "border-radius": "5px", padding: "5px", margin: "5px" }}>
-            <p style={{ "font-weight": "bold" }}>"{memo.message}"</p>
+            <p style={{ "font-weight": "bold" }}>`&quot;`{memo.message}`&quot;`</p>
             <p>From: {memo.name} at {memo.timestamp.toString()}</p>
           </div>
         )

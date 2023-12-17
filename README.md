@@ -1,5 +1,7 @@
 You can see a demo of this repo on Replit : https://replit.com/@thatguyintech/BuyMeACoffee-Solidity-DeFi-Tipping-app
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe7d2d54-89d8-4728-b43b-58c3b0476171/deploy-status)](https://app.netlify.com/sites/waveportal-contract/deploys)
+
 ## Getting Started
 
 `npm install` to install dependencies
